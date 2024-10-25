@@ -13,7 +13,28 @@ const geistMono = localFont({
   weight: "100 900",
 });
 const lineSeed = localFont({
-  src: "./fonts/LineSeedVF.otf",
+  src: [
+    {
+      path: "./fonts/lineSeed/LINESeedJP_OTF_Th.woff2",
+      weight: "250",
+      style: "normal",
+    },
+    {
+      path: "./fonts/lineSeed/LINESeedJP_OTF_Rg.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/lineSeed/LINESeedJP_OTF_Bd.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/lineSeed/LINESeedJP_OTF_Eb.woff2",
+      weight: "800",
+      style: "normal",
+    },
+  ],
   variable: "--font-line-seed",
 });
 
