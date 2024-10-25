@@ -12,6 +12,10 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const lineSeed = localFont({
+  src: "./fonts/LineSeedVF.otf",
+  variable: "--font-line-seed",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='ja'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} ${lineSeed.variable} antialiased`}>
         {children}
       </body>
     </html>
